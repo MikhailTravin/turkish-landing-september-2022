@@ -1,0 +1,64 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	padding: 140px 0px 15px 0px;
+	@media (max-width: $mobile) {
+		padding: 25px 0px 20px 0px;
+	}
+	// .header__contant
+	&__contant {
+		position: relative;
+	}
+	// .header__container
+	&__container {
+	}
+	// .header__logo
+	&__logo {
+	}
+	// .header__logo-desc
+	&__logo-desc {
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+	// .header__logo-mob
+	&__logo-mob {
+		display: none;
+		@media (max-width: $mobile) {
+			display: block;
+		}
+	}
+}
+
+.header-sheet {
+	position: absolute;
+	width: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	@media (max-width: $tablet) {
+		height: 225px;
+	}
+	@media (max-width: $mobile) {
+		height: 160px;
+	}
+}
+
+.header-bell {
+	position: absolute;
+	object-fit: cover;
+	top: 0;
+	right: 90px;
+	z-index: -3;
+	@media (max-width: $tablet) {
+		top: -100px;
+		right: -100px;
+	}
+	@media (max-width: $mobile) {
+		display: none;
+	}
+}
